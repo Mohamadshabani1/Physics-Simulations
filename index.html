@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coulomb's Law Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">Physics simulations</div>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Calculator</a></li>
+                <li><a href="#">Simulation</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="language-switcher">
+        <button id="en-btn">English</button>
+        <button id="ar-btn">عربي</button>
+    </div>
+
+
+    <div class="container">
+        <h1 id="title">Coulomb's Law Calculator</h1>
+        <form id="coulombs-form">
+            <div class="input-field">
+                <label id="label-charge1" for="charge1">Charge 1 (q1) in Coulombs:</label>
+                <input type="number" id="charge1" step="any" required>
+            </div>
+
+            <div class="input-field">
+                <label id="label-charge2" for="charge2">Charge 2 (q2) in Coulombs:</label>
+                <input type="number" id="charge2" step="any" required>
+            </div>
+
+            <div class="input-field">
+                <label id="label-distance" for="distance">Distance (r) in meters:</label>
+                <input type="number" id="distance" step="any" required>
+            </div>
+
+            <button type="submit" class="calculate-btn" id="calculate-btn">Calculate Force</button>
+        </form>
+
+        <div id="result-container">
+            <p id="result"></p>
+        </div>
+    </div>
+
+    <!-- PhET Simulation Section -->
+    <section class="phet">
+        <iframe src="https://phet.colorado.edu/sims/html/coulombs-law/latest/coulombs-law_en.html"></iframe>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Mohamad Shabani. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

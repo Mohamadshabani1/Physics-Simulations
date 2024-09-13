@@ -1,0 +1,178 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #1f3440, #99f2c8);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Header (Navigation Bar) */
+.navbar {
+    width: 100%;
+    background-color: #1f4037;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.navbar .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navbar .nav-links {
+    list-style-type: none;
+    display: flex;
+}
+
+.navbar .nav-links li {
+    margin: 0 15px;
+}
+
+.navbar .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.navbar .nav-links a:hover {
+    color: #99f2c8;
+}
+
+/* Language Switcher */
+.language-switcher {
+    margin-top: 50px;
+}
+
+.language-switcher button {
+    padding: 10px;
+    margin: 5px;
+    background-color: #1f4037;
+    color: white;
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.language-switcher button:hover {
+    background-color: #99f2c8;
+}
+
+/* Calculator Section */
+.container {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 400px;
+    animation: fadeIn 1s ease;
+    margin-top: 50px;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #1f4037;
+}
+
+.input-field {
+    margin-bottom: 15px;
+}
+
+label {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 5px;
+    display: block;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    outline: none;
+    transition: border 0.3s;
+}
+
+input:focus {
+    border-color: #99f2c8;
+}
+
+.calculate-btn {
+    padding: 10px 20px;
+    background-color: #1f4037;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.calculate-btn:hover {
+    background-color: #99f2c8;
+    transform: translateY(-5px);
+}
+
+#result-container {
+    margin-top: 20px;
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+
+.show-result {
+    opacity: 1;
+}
+
+#result {
+    font-size: 20px;
+    color: #333;
+}
+
+/* PhET Simulation */
+.phet {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+iframe {
+    width: 80vw;
+    height: 50vw;
+    border-radius: 20px;
+}
+
+/* Footer Section */
+footer {
+    background-color: #1f4037;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    position: relative;
+    bottom: 0;
+}
+
+.footer-content {
+    font-size: 14px;
+}
